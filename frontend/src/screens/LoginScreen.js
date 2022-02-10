@@ -12,7 +12,7 @@ const LoginScreen = () => {
     const [password, setPassword] = useState('')
 
     const [searchParams] = useSearchParams();
-    const redirect = searchParams.get('redirect') ? searchParams.get('redirect') : '/'
+    const redirect = searchParams.get('redirect') ? searchParams.get('redirect') : ''
 
     const dispatch = useDispatch()
 
